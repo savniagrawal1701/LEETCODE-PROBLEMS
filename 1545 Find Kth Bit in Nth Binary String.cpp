@@ -20,4 +20,5 @@ string makestring(int n) {
         string a=makestring(n);
         return a[k-1];
     }
+
 };
