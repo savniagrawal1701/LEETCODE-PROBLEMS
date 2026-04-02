@@ -1,0 +1,24 @@
+class Solution {
+public:
+    int fillCups(vector<int>& amount) {
+         priority_queue<int> pq;
+        pq.push(amount[0]);
+        pq.push(amount[1]);
+        pq.push(amount[2]);
+        int count = 0;
+      while(pq.size()>0){
+ int first = pq.top();
+            pq.pop();
+            int second = pq.top();
+            pq.pop();
+           if (second == 0) {
+                count += first;
+                break;
+            }
+                 count++;
+            pq.push(first - 1);
+            pq.push(second - 1);
+      }
+      return count;
+    }
+};
