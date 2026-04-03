@@ -1,0 +1,1 @@
+This Repo contains only the codes that i have done all by myself wihtout any help of AI and the codes that i am confident with and have taught any of the approach by myself and written the code all by myself.
